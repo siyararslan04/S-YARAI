@@ -1,1 +1,77 @@
 
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siyar AI Builder</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: Arial, sans-serif;
+      background: #10131a;
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      text-align: center;
+    }
+
+    h1 {
+      color: #65e6a5;
+    }
+
+    p {
+      color: #c4cad5;
+      line-height: 1.7;
+    }
+
+    .status {
+      margin-top: 24px;
+      padding: 16px;
+      background: #202733;
+      border-radius: 12px;
+    }
+
+    button {
+      margin-top: 16px;
+      padding: 14px 22px;
+      border: none;
+      border-radius: 8px;
+      background: #65e6a5;
+      color: #10131a;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🤖 Siyar AI Builder</h1>
+
+    <p>
+      Kişisel yapay zekâ geliştirme asistanına hoş geldin.
+      Burada birlikte yeni uygulamalar geliştireceğiz.
+    </p>
+
+    <div class="status" id="status">
+      Proje başarıyla başlatıldı!
+    </div>
+
+    <button onclick="showMessage()">
+      Asistanı Başlat
+    </button>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("status").textContent =
+        "Hazırım! Bir sonraki adımda yapay zekâ bağlantısını kuracağız.";
+    }
+  </script>
+</body>
+</html>
